@@ -1,0 +1,25 @@
+class Student:
+    def __init__(self, roll_no, name, marks):
+        self.roll_no = roll_no
+        self.name = name
+        self.marks = marks
+
+    def display(self):
+        percentage = sum(self.marks) / len(self.marks)
+
+        print("Roll No:", self.roll_no)
+        print("Name:", self.name)
+        print("Marks:", self.marks)
+        print("Percentage:", percentage, "%")
+        print("--------------------")
+
+
+
+s1 = Student(1, "Anuradha", [80, 75, 90, 85, 70])
+s2 = Student(2, "Rahul", [70, 65, 80, 75, 85])
+s3 = Student(3, "Priya", [90, 88, 92, 85, 95])
+
+
+s1.display()
+s2.display()
+s3.display()
